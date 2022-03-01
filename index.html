@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>modern music player</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+<body>
+
+	<div class="main">
+		
+		<!-- top bar -->
+		<div class="top_bar">
+			<button onclick="sidebar()"><i class='bx bx-chevron-right'></i></button>
+			<div class="options">
+				<button><i class='bx bx-music' ></i></button>
+				<button><i class='bx bxs-volume-low' ></i></button>
+				<button><i class='bx bx-edit-alt'></i></button>
+			</div>
+		</div>
+
+		<div class="playing_part">
+			<div class="img">
+				<img id="img" src="./img/img1.jpg" alt="img">
+			</div>
+		</div>
+
+		<!-- control part -->
+		<div class="control_part">
+			<div class="song_title">
+				<p class="song">song title</p>
+				<!-- <p class="artist">artist name</p> -->
+			</div>
+
+			<div class="control_buttons">
+				<div class="range_slider">
+					<div class="slider">
+					</div>
+					<div class="time">0:00</div>
+				</div>
+				
+				
+
+				<audio class="audio" src="./music/Егор Крид - Отпускай.mp3"></audio>
+
+				<div class="main_btns">
+					<button id="prev"><i class='bx bx-skip-previous prev' ></i></button>
+					<button id="play_btn"><img class="imgbtn" src="./img/play-regular-24.png" alt="play"></i></button>
+					<button id="next"><i class='bx bx-skip-next' ></i></button>
+				</div>
+			</div>
+		</div>
+
+		
+	</div>
+
+   <!--  javascript part -->
+   <script src="./js/main.js"></script>
+	
+	
+</body>
+</html>
